@@ -1,0 +1,5 @@
+spring:
+  mail:
+    username: yupeijia20010404@163.com
+    password: QVVAKTDLRALKTWSJ
+    host: smtp.163.com
