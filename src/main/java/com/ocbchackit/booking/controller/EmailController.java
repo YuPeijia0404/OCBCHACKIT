@@ -1,7 +1,7 @@
 package com.ocbchackit.booking.controller;
 
-
 import com.ocbchackit.booking.common.Result;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+
+import java.io.IOException;
+
 
 
 @Controller
@@ -22,7 +25,7 @@ public class EmailController {
 
     @ResponseBody
     @RequestMapping(value = "/id")
-    public void receiveId(String id){
+    public void receiveId(String id) throws IOException {
         this.id = id;
     }
 

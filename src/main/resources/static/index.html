@@ -11,37 +11,37 @@
 <body>
 <div>
     <div class="block">
-        <input class="seat" type="button" id="1" value="01" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="2" value="02" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="3" value="03" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="4" value="04" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="5" value="05" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="1" value="01" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="2" value="02" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="3" value="03" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="4" value="04" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="5" value="05" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
     </div>
     <div class="block">
-        <input class="seat" type="button" id="6" value="06" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="7" value="07" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="8" value="08" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="9" value="09" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="10" value="10" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="6" value="06" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="7" value="07" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="8" value="08" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="9" value="09" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="10" value="10" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
     </div>
     <div class="block">
-        <input class="seat" type="button" id="11" value="11" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="12" value="12" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="13" value="13" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="14" value="14" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="15" value="15" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="11" value="11" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="12" value="12" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="13" value="13" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="14" value="14" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="15" value="15" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
     </div>
     <div class="block">
-        <input class="seat" type="button" id="16" value="16" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="17" value="17" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="18" value="18" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="19" value="19" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
-        <input class="seat" type="button" id="20" value="20" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="16" value="16" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="17" value="17" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="18" value="18" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="19" value="19" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
+        <input type="button" id="20" value="20" style="margin-right: 5px" onclick="choose(this.id);this.disabled ='disabled'">
     </div>
     <div>
         <dialog>
             <div>
-                <form>
+                <form id="info">
                     <p>Name: <input type="text" id="username" required lay-verify="required"/></p>
                     <p>Email: <input type="text" id="email" required lay-verify="required"/></p>
                     <input type="button" value="Confirm" onclick="confirmation()"/>
@@ -88,5 +88,6 @@
             },
         });
         dialog.close();
+        document.getElementById("info").reset();
     }
 </script>
